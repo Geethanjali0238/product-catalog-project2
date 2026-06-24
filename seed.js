@@ -1,4 +1,4 @@
-const pool = require("./db").default;
+const pool = require("./db").default.default;
 
 const categories = [
   "Electronics",
