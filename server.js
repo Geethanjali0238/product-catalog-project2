@@ -66,18 +66,20 @@ app.get("/", async (req, res) => {
 
         }
 
-        res.json(result.rows);
+         res.json(result.rows);
 
     } catch (error) {
 
-        console.error(error);
+        console.log(error);
 
         res.status(500).json({
-            error: error.message
+            error: error,
+            message: error.message
         });
 
     }
-});
+});               
+
 
 
 
